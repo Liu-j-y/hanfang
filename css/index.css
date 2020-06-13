@@ -1,0 +1,317 @@
+#banner{
+  width: 1670px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+  clear: both;
+}
+#banner .img{
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+#banner .img-li{
+  display:none;
+  width: 100%;
+  height: 100%;
+}
+#banner .img .active{
+  display:block;
+}
+#banner .dot{
+  width:;
+  height:16px;
+  top:450px;
+  right: 100px;
+  float:left;
+  padding:6px 0px 0px 10px;
+  position:absolute;
+}
+#banner .dot .dot-li{
+  list-style:none;
+  width:20px;
+  height:6px;
+  background:#fff;
+  opacity: 0.1;
+  border-radius:0px;
+  float:left;
+  margin-right:10px;
+  margin-bottom:0px;
+}
+#banner .dot .active{
+  width:30px;
+  height:6px;
+  opacity: 0.5;
+}
+#banner .img .banner-text{
+  position:absolute;
+  top:50px;
+  left: 280px;
+  width:100%;
+  color:#fff;
+  font-size:24px;
+}
+.#banner .img .banner-text h1{
+  font-size:48px;
+  font-weight:normal;
+}
+#banner .img .banner-text strong{
+  font-weight:normal;
+}
+/*每周热卖*/
+#hot-sale{
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+#hot-sale .content .top-text{
+  text-decoration: underline;
+}
+#hot-sale .content .sale-img li{
+  float: left;
+  margin: 15px 25px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+#hot-sale .content .sale-img li:first-child{
+  margin-left: 0;
+}
+#hot-sale .content .sale-img li:last-child{
+  margin-right: 0;
+}
+#hot-sale .content .sale-img img{
+  width: 100%;
+  height: auto;
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  color: #ffffff;
+  opacity: 0;
+}
+.mask h3{
+  color: #fff;
+  text-align: center;
+  margin-top:70px;
+}
+#hot-sale a:hover .mask{
+  opacity: 0.5;           
+}
+/*主推攻略*/
+#main-tips{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top:80px;
+  clear: both;
+  text-align: center;
+}
+#main-tips img{
+  width: 355px;
+  height: 440px;
+  float: left;
+}
+#main-tips .content{
+  width: 355px;
+  height: 440px;
+  background: #f6f6f6;
+  float: right;
+  text-align: left;
+  font-size: 16px;
+}
+#main-tips .content h3:hover{
+  color: #CF4633;
+}
+#main-tips .content .date{
+  color: #8c8983;
+  font-size: 14px;
+}
+#main-tips .content .text{
+  color: #555;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+#main-tips .content .title{
+  color: #CF4633;
+  margin:80px 0 10px 10px;
+  font-weight: bold;
+}
+#main-tips .content .tit-con{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin: 0 0 5px 0;
+}
+#main-tips .content .tit-con a:hover{
+  color: #CF4633;
+  text-decoration: underline;
+}
+#main-tips .symbol{
+  float: left;
+  font-size: 30px;
+  margin: 18% 20px 0 20px;
+}
+#main-tips .tit-con a img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -90px;
+  display: none;
+}
+#main-tips .tit-con a:hover img{
+  display: block;
+}
+/*今日上新*/
+#new-sale{
+  width: 1290px;
+  margin: 0 auto;
+  padding-top:80px;
+  clear: both;
+  text-align: center;
+}
+#new-sale a:active, #new-sale a:hover, #new-sale .active{
+  text-decoration: underline;
+}
+#new-sale .content{
+  margin-top: 20px;
+}
+#new-sale .content li{
+  width: 178px;
+  float: left;
+  padding: 12.5px;
+  position: relative;
+  background:rgba(246,246,246,0);   
+  border: 1px dashed rgba(221,221,221,0);  
+}
+#new-sale .content li:hover{
+  background:rgba(246,246,246,1);   
+  border: 1px dashed rgba(221,221,221,1);  
+}
+#new-sale .content .li-img{
+  width: 175px;
+  height: 175px;
+  overflow:hidden;
+}
+#new-sale .content .li-img img{
+  width: 100%;
+  height: auto;
+}
+#new-sale .content .desc{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#new-sale .content .like{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+  z-index: 5;
+  background: url("../images/icon/item-my--.svg") no-repeat;
+  background-size:15px 15px;
+}
+#new-sale .content .like:hover{
+  background: url("../images/icon/item-my-.svg") no-repeat;
+  background-size:15px 15px;
+}
+#new-sale .content li:hover .like{
+  display: block;    
+}
+#new-sale .content .text{
+  font-size: 14px;
+}
+#new-sale .content .price{
+  font-weight: bold;
+  color: #333;
+}
+i{
+  border: solid #7F7F7F;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 6px;
+}
+#new-sale .content .left{
+  float: left;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin: 8% 5px 0 5px;
+}
+#new-sale .content .right{
+  float: right;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin: 8% 5px 0 5px;
+}
+#new-sale .content li:hover p{
+  color: #CF4633;  
+}
+#new-sale .content .a-css{
+  text-decoration: underline;
+}
+/*汉服之美*/
+#hanfu-beauty{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top:80px;
+  clear: both;
+  text-align: center;
+}
+#hanfu-beauty p{
+  font-size: 18px;
+}
+.accordion{ 
+  height:400px;
+  overflow: hidden;
+  position:relative; 
+}
+.accordion:after{ 
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff; 
+}
+.accordion.create:after{ 
+  display: none; 
+}
+.accordion-ul{ 
+  display:block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:9999px;
+  height:400px;
+  overflow:hidden;
+  position:absolute;
+  left:0;
+  top:0; 
+}
+.accordion-li{ 
+  display:block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height:400px;
+  float:left;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 #000;
+  transition: all 0.3s ease-out; 
+}
+.accordion-img{ 
+  display: block;
+  cursor: pointer; 
+}

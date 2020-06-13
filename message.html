@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>汉服-留言板</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/message.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  </head>
+  
+  <body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- nav开始 -->
+	<nav class="nav-box">
+	  	<div class="header-logo">
+		    <a href="index.html">
+		      <img src="images/logo.png" width="98" height="58" />
+		    </a>
+	    </div>
+	    <div class="nav-con" style="padding-top: 0;">
+		    <div class="nav">
+		      	<ul>
+			        <li id="nav_logo" style="display: none" class="item-first">
+			          	<a href="">
+			            	<img src="images/logo-.png" width="68" height="35">
+			          	</a>
+			        </li>
+		            <li class="item">
+		            	<a href="index.html" target="_blank">首页</a>
+		          	</li>
+					<li class="item">
+						<a href="hanfu.html" target="_blank">汉服</a>
+					</li>
+					<li class="item">
+						<a href="orna.html" target="_blank">饰品</a>
+					</li>
+					<li class="item">
+						<a href="shoes.html" target="_blank">鞋子</a>
+					</li>
+					<li class="item">
+						<a href="tips.html" target="_blank">攻略</a>
+					</li>
+					<li class="item">
+						<a href="message.html" target="_blank" class="here">留言板</a>
+					</li>
+		     	</ul>
+			   <div class="search-wrapper">
+			        <form>
+						<div class="search">
+							<input type="text" id="keyword" class="keyword" name="keyword" autocomplete="off">
+							<a class="searchSubmit"  value="" href="javascript:search();" ></a>
+						</div>
+			        </form>
+		      	</div>
+	    	</div>
+  		</div>
+	</nav>
+	<!-- nav结束 -->
+
+	<!-- 留言板模块开始 -->
+	<div id="con-box">
+		<p class="title">Welcome</p>
+		<p class="font-css">欢迎您来到我们的惊喜留言页面，悄悄告诉您————<span class="red">每周五</span>我们都会通过大家的留言随机<span class="red">抽取一位<span style="font-weight:bold">幸运儿</span>赢取</span>为我们的<span class="red" style="font-weight:bold">惊喜小礼物</span>哦！<br>
+		<img src="images/icon/no-1.png" class="icon"><br>
+		<div class="pic"><img src="images/userPic/userPic1.jpg"></div>
+		<p class="name">鸭梨儿333</p>
+		<p class="desc">
+			恭喜<span class="red">@鸭梨儿333</span>获得我们的惊喜小礼物【沧蓝原创设计发簪】<br>
+			<span style="padding-top:5px;display:block">留言内容：那件花间鹿的汉衣[晟道]太太太仙了吧，必须必须拥有一件啊啊啊！</span>
+		</p>
+		<h2>最新留言</h2>
+		<ul class="mes-list">
+			<li>
+				<div class="left"><img src="images/userPic/userPic2.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic3.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic4.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic5.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic1.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic2.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic3.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+			<li>
+				<div class="left"><img src="images/userPic/userPic4.jpg"></div>
+				<div class="right">
+					<span class="uname"><a href="">鹿儿小宝贝</a></span><span class="date">昨天/20:38</span><br>
+					<span>我觉得[溪月]沧蓝原创设计发簪可以多增几种颜色！太可了！！！</span>
+				</div>
+				<div class="like">
+					<a href=""><div class="icon"></div></a><span class="font-css-">+1888</span>
+				</div>
+			</li>
+		</ul>
+		<div class="pg">
+			<a href="#" class="nxt prev">上一页 ></a>
+			<a href="#" class="nxt here">1</a>
+			<a href="#" class="nxt">2</a>
+			<a href="#" class="nxt">3</a>
+			<a href="#" class="nxt">...</a>
+			<a href="#" class="nxt">11</a>
+			<a href="#" class="nxt next">下一页 ></a>
+		</div>
+		<div class="mes-box">
+			<p class="desc">如果可以，我希望您能留下珍贵的建议或留言。</p>
+			<div class="mes-user">
+				<div class="mes">
+					<textarea name="" id="" cols="30" rows="10" class="input-con"></textarea>
+					<input type="text" class="btn" value="提交留言">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 留言板模块结束 -->
+
+	<!-- footer开始 -->
+	<footer class="footer">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+  </body>
+</html>

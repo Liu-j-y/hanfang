@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>汉坊-注册</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+</head>
+<body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- 登录标题开始 -->
+	<a href="index.html">
+		<div class="logo">
+			<img src="images/logo-.png" width="98" height="49">
+			<div class="title">用户登录</div>
+		</div>
+	</a>
+	<!-- 登录标题结束 -->
+
+	<!-- 注册模块开始 -->
+	<div class="con">
+		<div class="register">
+			<ul class="tab-register">
+				<li class="tab-username"><span>账号注册</span></li>
+				<li class="tab-mobile"><span>手机号注册</span></li>
+			</ul>
+			<form  action="" method="post" class="form-reg-username active">
+				<div class="username">
+					<span class="title">用户名</span>
+					<input type="text" name="username" id="username" placeholder="请输入3~16个字符以内的用户名" class="input-user" maxlength="16">
+				</div>
+				<div class="errortips"></div>
+				<div class="password">
+					<span class="title">密码</span>
+					<input type="password" name="password" id="password" placeholder="请输入6~25个字符以内的密码" class="input-pwd" maxlength="25">
+				</div>
+				<div class="errortips"></div>
+				<div class="re_password">
+					<span class="title">确认密码</span>
+					<input type="password" id="re_password" name="re_password" placeholder="请再次输入您的密码" class="input-re-pwd" maxlength="25">
+				</div>
+				<div class="errortips"></div>
+				<div class="verifycode" style="width:225px;">
+					<span class="title">验证码</span>
+					<input type="text" id="verifycode" name="verifycode" class="input-vcode" maxlength="4" style="width: 139px;float: right;">
+				</div>
+				<canvas id="verify" class="verify" width="93px" height="38px"></canvas>
+				<div class="errortips"></div>
+				<p style="text-align: center">
+					<input type="checkbox" id="rules" name="rules" style="margin-top:0;margin-right:10px;vertical-align: middle;" checked="checked">我已阅读并同意《优购会员注册协议》
+				</p>
+				<input type="submit" class="submit" value="点击注册" title="注册">
+				<p class="f-black" style="color: #999;margin-top: 10px;text-align: center;">
+					已有账号，请<a href="hanfang-login.html" style="text-decoration: underline;margin-left:5px;">登录</a>
+				</p>
+			</form>
+			<form action="" class="form-reg-mobile">
+				<div class="mobile">
+					<span class="title">手机号</span>
+					<input type="text" name="mobile" placeholder="请输入您的手机号码" id="mobile_" class="input-mobile" maxlength="11">
+				</div>
+				<div class="errortips"></div>
+				<div class="code" style="width:235px;">
+					<span class="title">短信验证码</span>
+					<input type="text" name="code" id="code" class="input-code" maxlength="8" style="width: 133px;float: right;">
+				</div>
+				<input type="submit" class="get-code" value="获取验证码" title="获取验证码">
+				<div class="errortips"></div>
+				<div class="password">
+					<span class="title">密码</span>
+					<input type="password" name="password" id="password" placeholder="请输入6~25个字符以内的密码" class="input-pwd" maxlength="25">
+				</div>
+				<div class="errortips"></div>
+				<div class="re_password">
+					<span class="title">确认密码</span>
+					<input type="password" id="re_password" name="re_password" placeholder="请再次输入您的密码" class="input-re-pwd" maxlength="25">
+				</div>
+				<div class="errortips"></div>
+				<p style="text-align: center">
+					<input type="checkbox" id="rules" name="rules" style="margin-top:0;margin-right:10px;vertical-align: middle;" checked="checked">我已阅读并同意《优购会员注册协议》
+				</p>
+				<input type="submit" class="submit" value="点击注册" title="注册">
+				<p class="f-black" style="color: #999;margin-top: 10px;text-align: center;">
+					已有账号，请<a href="hanfang-login.html" style="text-decoration: underline;margin-left:5px;">登录</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	<!-- 注册模块结束 -->
+
+	<!-- footer开始 -->
+	<footer class="footer" style="margin-top:0">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+</body>
+</html>

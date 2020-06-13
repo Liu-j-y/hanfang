@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>汉坊-鞋子</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/product.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  </head>
+  
+  <body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- nav开始 -->
+	<nav class="nav-box">
+	  	<div class="header-logo">
+		    <a href="index.html">
+		      <img src="images/logo.png" width="98" height="58" />
+		    </a>
+	    </div>
+	    <div class="nav-con" style="padding-top: 0;">
+		    <div class="nav">
+		      	<ul>
+			        <li id="nav_logo" style="display: none" class="item-first">
+			          	<a href="">
+			            	<img src="images/logo-.png" width="68" height="35">
+			          	</a>
+			        </li>
+		            <li class="item">
+		            	<a href="index.html" target="_blank">首页</a>
+		          	</li>
+					<li class="item">
+						<a href="hanfu.html" target="_blank">汉服</a>
+					</li>
+					<li class="item">
+						<a href="orna.html" target="_blank">饰品</a>
+					</li>
+					<li class="item">
+						<a href="shoes.html" target="_blank" class="here">鞋子</a>
+					</li>
+					<li class="item">
+						<a href="tips.html" target="_blank">攻略</a>
+					</li>
+					<li class="item">
+						<a href="message.html" target="_blank">留言板</a>
+					</li>
+		     	</ul>
+			   <div class="search-wrapper">
+			        <form>
+						<div class="search">
+							<input type="text" id="keyword" class="keyword" name="keyword" autocomplete="off">
+							<a class="searchSubmit"  value="" href="javascript:search();" ></a>
+						</div>
+			        </form>
+		      	</div>
+	    	</div>
+  		</div>
+	</nav>
+	<!-- nav结束 -->
+	
+	<div class="line"></div>
+
+	<!-- 商品（鞋子）显示模块开始 -->
+	<div id="content">
+		<p><a href="index.html">首页</a> > <a href="shoes.html">鞋子</a></p>
+		<div class="con-left">
+			<i></i><h5>品牌</h5>
+			<div class="con-box">
+				<a href="">瑶家</a>  |  <a href="">老北京</a><br>
+				<a href="">七月荷</a>  |  <a href="">秀熙</a><br>
+				<a href="">江南朱记</a><br>
+				<a href="">族韵</a>  |  <a href="">百钦</a><br>
+				<a href="">岚悦</a>  |  <a href="">榆越</a><br>
+				<a href="">BICUAN/必川</a><br>
+				<a href="">嫣然转盼</a><br>
+				<a href="">曲依思黛</a><br>
+				<a href="">天赐绣</a>  |  <a href="">朝绣</a><br>
+				<a href="">MOLORFUN/慕蓝枫</a><br>
+				<a href="">045V1</a>  |  <a href="">一字</a><br>
+				<a href="">宫妃丽秀</a><br>
+				<a href="">净蕾</a>  |  <a href="">木兰阁</a><br>
+			</div>
+			<i></i><h5>尺码</h5>
+			<div class="con-box">
+				<a href="">28cm</a>  |  <a href="">29cm</a><br>
+				<a href="">30cm</a>  |  <a href="">31cm</a><br>
+				<a href="">32cm</a>  |  <a href="">33cm</a><br>
+				<a href="">34cm</a>  |  <a href="">35cm</a><br>
+				<a href="">36cm</a>  |  <a href="">37cm</a><br>
+				<a href="">38cm</a>  |  <a href="">39cm</a><br>
+				<a href="">40cm</a>  |  <a href="">41cm</a><br>
+				<a href="">42cm</a>  |  <a href="">43cm</a><br>
+				<a href="">44cm</a>  |  <a href="">45cm</a><br>
+			</div>
+			<i></i><h5>款式季节</h5>
+			<div class="con-box">
+				<a href="">春季</a><br>
+				<a href="">夏季</a><br>
+				<a href="">秋季</a><br>
+				<a href="">冬季</a>
+			</div>
+		</div>
+		<div class="con-right">
+			<div class="con-title">
+				<ul>
+				<li><a href="">新品</a></li>
+				<li><a href="" class="here">热销</a></li>
+				<li><a href="">推荐</a></li>
+				<li><a href="">价格</a></li>
+				<li><a href="">折扣</a></li>
+			</ul>
+			</div>
+			<ul class="item-list">
+				<a href="detail.html">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s3.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s4.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s5.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s6.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s1.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<div class="li-img">
+							<img src="images/product/s2.jpg">
+						</div>
+				 		<span href="" class="desc">汉服鞋子女古风绣花鞋平底中国风翘首履弓鞋汉元素鞋汉鞋古风淡雅</span>
+				 		<p class="text price">￥ 199<span class="text de-price">￥ 299</span></p>
+				 		<div class="like"></div>
+					</li>
+				</a>
+			</ul>
+			<div class="pg">
+				<a href="#" class="nxt prev">上一页 ></a>
+				<a href="#" class="nxt here">1</a>
+				<a href="#" class="nxt">2</a>
+				<a href="#" class="nxt">3</a>
+				<a href="#" class="nxt">...</a>
+				<a href="#" class="nxt">111</a>
+				<a href="#" class="nxt next">下一页 ></a>
+			</div>
+		</div>
+	</div>
+	<!-- 商品（鞋子）显示模块结束 -->
+
+	<!-- footer开始 -->
+	<footer class="footer">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+  </body>
+</html>

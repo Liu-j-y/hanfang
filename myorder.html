@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>汉坊-我的订单</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/myorder.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  </head>
+  <body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- nav开始 -->
+	<nav class="nav-box">
+	  	<div class="header-logo">
+		    <a href="index.html">
+		      <img src="images/logo.png" width="98" height="58" />
+		    </a>
+	    </div>
+	    <div class="nav-con" style="padding-top: 0;">
+		    <div class="nav">
+		      	<ul>
+			        <li id="nav_logo" style="display: none" class="item-first">
+			          	<a href="">
+			            	<img src="images/logo-.png" width="68" height="35">
+			          	</a>
+			        </li>
+		            <li class="item">
+		            	<a href="index.html" target="_blank">首页</a>
+		          	</li>
+					<li class="item">
+						<a href="hanfu.html" target="_blank">汉服</a>
+					</li>
+					<li class="item">
+						<a href="orna.html" target="_blank">饰品</a>
+					</li>
+					<li class="item">
+						<a href="shoes.html" target="_blank">鞋子</a>
+					</li>
+					<li class="item">
+						<a href="tips.html" target="_blank">攻略</a>
+					</li>
+					<li class="item">
+						<a href="message.html" target="_blank">留言板</a>
+					</li>
+		     	</ul>
+			   <div class="search-wrapper">
+			        <form>
+						<div class="search">
+							<input type="text" id="keyword" class="keyword" name="keyword" autocomplete="off">
+							<a class="searchSubmit"  value="" href="javascript:search();" ></a>
+						</div>
+			        </form>
+		      	</div>
+	    	</div>
+  		</div>
+	</nav>
+	<!-- nav结束 -->
+
+	<div class="line"></div>
+
+	<!-- 我的订单模块开始 -->
+	<div class="con">
+		<p>您当前的位置：<a href="hanfang-index.html">首页</a> > <a href="">我的汉坊</a> > <a href="" style="font-weight: bold;">我的订单</a></p>
+		<br>
+		<div class="con-left">
+			<div class="title">我的汉坊</div>
+			<div class="ul-box">
+				<ul>
+					<li class="li-tit">交易中心</li>
+					<li><a href="hanfang-myorder.html"><span class="dot active">•</span>我的订单</a></li>
+					<li><a href="hanfang-myfav.html"><span class="dot">•</span>我的收藏</a></li>
+					<li><a href=""><span class="dot">•</span>商品评论/晒单</a></li>
+				</ul>
+				<ul>
+					<li class="li-tit">我的资产</li>
+					<li><a href=""><span class="dot">•</span>我的优惠券</a></li>
+					<li><a href=""><span class="dot">•</span>我的礼品卡</a></li>
+					<li><a href=""><span class="dot">•</span>我的积分</a></li>
+				</ul>
+				<ul>
+					<li class="li-tit">个人设置</li>
+					<li><a href=""><span class="dot">•</span>安全设置</a></li>
+					<li><a href=""><span class="dot">•</span>我的收货地址</a></li>
+				</ul>
+				<ul>
+					<li class="li-tit">售后服务</li>
+					<li><a href=""><span class="dot">•</span>查看退换货</a></li>
+					<li style="margin-bottom: 20px;"><a href=""><span class="dot">•</span>申请退换货</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="con-right">
+			<div class="tab-box">
+				<div class="tab">我的订单</div>
+				<div class="search">
+					<input type="text" name="orderKeyword" class="search-input orderKeyword" placeholder="搜索我的订单">
+					<a href="" class="search-btn">搜索</a>
+				</div>
+				<div class="status-box">
+					<select class="order-status">
+						<option name="order_status" value="订单状态">订单状态</option>
+						<option name="order_status" value="订单生成">订单生成</option>
+						<option name="order_status" value="配货中">配货中</option>
+						<option name="order_status" value="已发货">已发货</option>
+						<option name="order_status" value="已取消">已取消</option>
+					</select>
+					<select class="payment-status" onchange="getPaymentStatus()">
+						<option name="payment_status" value="支付状态">支付状态</option>
+						<option name="payment_status" value="未支付">未支付</option>
+						<option name="payment_status" value="已支付">已支付</option>
+					</select>
+				</div>
+			</div>
+			<div class="item-list order-list">
+				<ul class="item-header">
+					<li class="pro-name">商品信息</li>
+					<li class="price">价格</li>
+					<li class="num">数量</li>
+					<li class="total-price">合计</li>
+					<li class="status">订单状态</li>
+					<li class="status">支付状态</li>
+					<li class="cz">操作</li>
+				</ul>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c1.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c2.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c3.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c4.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c5.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="order-list-box">
+					<span class="order-no">订单号：SN202004205528</span>
+					<span>下单时间：2020/04/20 </span>
+					<ul class="item">
+						<li class="pro-name">
+							<div class="item-img"><img src="images/product/c6.jpg"></div>
+							<div class="desc">
+								<a href="">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+								<p style="color:#a9a9a9">颜色：
+									<span>蓝色</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尺码：
+									<span>M</span>
+								</p>
+							</div>
+						</li>
+						<li class="price">328</li>
+						<li class="num">1件</li>
+						<li class="price">￥ 328</li>
+						<li class="date"></li>
+						<li class="status">已发货</li>
+						<li class="status">已支付</li>
+						<li class="cz"><p><a href="" class="to-pay">立即付款</a><br><a href="" class="delete-item">查看详情&nbsp;&nbsp;|&nbsp;&nbsp;取消订单</a></p></li>
+					</ul>
+				</div>
+				<div class="b-box">
+					<ul class="b">
+						总记录数：<span>6</span>
+					</ul>
+					<div class="pg">
+						<a href="#" class="nxt prev">上一页 ></a>
+						<a href="#" class="nxt here">1</a>
+						<a href="#" class="nxt">2</a>
+						<a href="#" class="nxt">3</a>
+						<a href="#" class="nxt next">下一页 ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 我的订单模块结束 -->
+
+	<!-- footer开始 -->
+	<footer class="footer">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+</body>
+</html>

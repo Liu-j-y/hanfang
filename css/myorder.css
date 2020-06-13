@@ -1,0 +1,272 @@
+.con{
+	width: 1200px;
+	margin: 0 auto;
+}
+.con .con-left{
+	width: 150px;
+	float: left;
+	background: #fcfcfc;
+}
+.con .con-left .title{
+	background: #333;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.con .con-left .ul-box{
+	border: 1px solid #e3e3e3;
+}
+.con .con-left .ul-box ul{
+    padding-top: 25px;
+    text-indent: 29px;
+}
+.con .con-left .ul-box ul .li-tit{
+    font-weight: bold;
+    font-size: 14px;
+    text-indent: 29px;
+    color: #333;
+}
+.con .con-left .ul-box ul li{
+    line-height: 23px;
+    height: 25px;
+    color: #666;
+    text-indent: 29px;
+    position: relative;
+}
+.con .con-left .ul-box ul li a{
+	color: #666;
+}
+.con .con-left .ul-box ul li .dot{
+    margin-right: 6px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    display: none;
+}
+.con .con-left .ul-box ul li .active{
+	display: block;
+}
+.con .con-left .ul-box ul li a:hover .dot{
+	display: block;
+}
+.con .con-right{
+	width: 1040px;
+    height: auto;
+    color: #333;
+    float: right;
+}
+.con .con-right .tab-box{
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.con .con-right .tab{
+    top: 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #f1f1f1;
+    width: 108px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #fcfcfc;
+    float: left;
+}
+.con .con-right .status-box{
+	float: right;
+	height:26px;
+	margin-top:-4px;
+}
+.con .con-right .order-status,.con .con-right .payment-status{
+	width: 86px;
+	height:26px;
+	margin:0 10px 0 0;
+	color: #333;
+}
+.con .con-right .search{
+    float: right;
+}
+.con .con-right .search .search-input{
+    border: 1px solid #333;
+    width: 206px;
+    height: 24px;
+    padding: 0 5px;
+    float: left;
+}
+.con .con-right .search .search-btn{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    background: #333;
+    text-align: center;
+    margin-left: 10px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+}
+.con .con-right .item-list{
+    margin-top: 10px;
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+.con .con-right .item-list .item-header{
+    border-bottom: 1px solid #e3e3e3;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding-left: 40px;
+    background: #fcfcfc;
+}
+.con .con-right .item-list li{
+    float: left;
+    text-align: center;
+}
+.con .con-right .item-list .pro-name, .con .con-right .item .pro-name{
+    width: 495px;
+}
+.con .con-right .item .pro-name{
+    width: 489px;
+    text-align: left;
+}
+.con .con-right .item-list .price, .con .con-right .item-list .cz,.con .con-right .item .price, .con .con-right .item .cz{
+    width: 243px;
+}
+.con .con-right .item-list .item-list-box,.con .con-right .item-list .order-list-box{
+    overflow: hidden;
+}
+.con .con-right .item-list .item{
+	border-bottom: 1px solid #e3e3e3;
+	width: 94%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 18px 0 18px 20px;
+}
+.con .con-right .item-list .item .checks{
+	margin-top: 22px;
+	margin-right: 10px;
+	vertical-align: middle;
+	float: left;
+	line-height: 60px;
+}
+.con .con-right .item-list .item .item-img{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.con .con-right .item-list .item .item-img img{
+	width: 100%;
+	height: auto;
+}
+.con .con-right .item-list .item .desc{
+	width: 450px;
+}
+.con .con-right .item-list .item .desc p span{
+	color: #000;
+}
+.con .con-right .item-list .item .last-price{
+	color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.con .con-right .item-list .item .to-car{
+	display: inline-block;
+    padding: 5px 13px;
+    background: #333;
+    color: #fff;
+}
+.con .con-right .item-list .item .delete-item{
+	display: block;
+	margin-top: 5px;
+}
+.con .con-right .item-list .b-box{
+    width: 100%;
+}
+.con .con-right .item-list .b{
+	width: 94%;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 15px 0 5px 20px;
+}
+.con .con-right .pg{
+	float: right;
+	margin-top: -50px;
+	margin-right: 10px;
+}
+.con .con-right .order-list .pro-name{
+    width: 280px;
+}
+.con .con-right .order-list .price,.con .con-right .order-list .total-price,
+.con .con-right .order-list .num,.con .con-right .order-list .status{
+    width: 109px;
+}
+.con .con-right .order-list .cz{
+	width: 150px;
+}
+.con .con-right .item-list .order-list-box .order-no{
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 20px;
+    display: inline-block;
+}
+.con .con-right .item-list .order-list-box .item{
+    border-bottom: 1px solid #e3e3e3;
+    width: 94%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0px 0 5px 30px;
+}
+.con .con-right .item-list .order-list-box .item .desc a{
+    width: 180px;
+    display: inline-block;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.order-list-box .item .price,.order-list-box .item .num,.order-list-box .item .total-price,.order-list-box .item .status{
+    line-height: 50px;
+}
+.con .con-right .item-list .order-list-box .item .cz{
+    margin-top: -10px;
+}
+.con .con-right .item-list .order-list-box .item .to-pay{
+    display: inline-block;
+    padding: 5px 13px;
+    background: #333;
+    color: #fff;
+}
+.pg{
+	float: right;
+	margin: 20px 0;
+}
+.pg a{
+    float: left;
+    display: inline;
+    margin-left: 6px;
+    padding: 5px 10px;
+    border-color: #dedede;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid rgba(221,221,221,1);  
+}
+.pg .here, .pg a:hover{
+    background: #333;
+    color: #fff;
+    border: 1px solid rgba(51,51,51,1);  
+}

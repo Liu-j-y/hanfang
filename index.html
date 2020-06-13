@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>汉坊</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/accordion.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  </head>
+  
+  <body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- nav开始 -->
+	<nav class="nav-box">
+	  	<div class="header-logo">
+		    <a href="index.html">
+		      <img src="images/logo.png" width="98" height="58" />
+		    </a>
+	    </div>
+	    <div class="nav-con" style="padding-top: 0;">
+		    <div class="nav">
+		      	<ul>
+			        <li id="nav_logo" style="display: none" class="item-first">
+			          	<a href="">
+			            	<img src="images/logo-.png" width="68" height="35">
+			          	</a>
+			        </li>
+		            <li class="item">
+		            	<a href="index.html" target="_blank" class="here">首页</a>
+		          	</li>
+					<li class="item">
+						<a href="hanfu.html" target="_blank">汉服</a>
+					</li>
+					<li class="item">
+						<a href="orna.html" target="_blank">饰品</a>
+					</li>
+					<li class="item">
+						<a href="shoes.html" target="_blank">鞋子</a>
+					</li>
+					<li class="item">
+						<a href="tips.html" target="_blank">攻略</a>
+					</li>
+					<li class="item">
+						<a href="message.html" target="_blank">留言板</a>
+					</li>
+		     	</ul>
+			   <div class="search-wrapper">
+			        <form>
+						<div class="search">
+							<input type="text" id="keyword" class="keyword" name="keyword" autocomplete="off">
+							<a class="searchSubmit"  value="" href="javascript:search();" ></a>
+						</div>
+			        </form>
+		      	</div>
+	    	</div>
+  		</div>
+	</nav>
+	<!-- nav结束 -->
+
+	<!-- 轮播图开始 -->
+	<div id="banner">
+	    <div class="img">
+	        <a href="">
+	        	<li style="background: url('images/banner01.jpg') center center no-repeat;background-size: cover;" class="img-li active">
+				<div class="banner-text">
+					<span>7/Mar.2020</span><br>  
+					<span>诗词歌赋清风伴，岁月花开墨存香。</span>
+				</div>
+				</li>
+		    </a>
+	        <a href="">
+	        	<li style="background: url('images/banner02.jpg') center center no-repeat;background-size: cover;" class="img-li">
+				<div class="banner-text" >
+					<span>6/Mar.2020</span><br>  
+					<span>汉服飘逸翩跹舞，琴瑟和鸣对月扬。</span>
+				</div>
+				</li>
+		    </a>
+		    <a href="">
+	        	<li style="background: url('images/banner03.jpg') center center no-repeat;background-size: cover;" class="img-li">
+				<div class="banner-text">
+					<span>5/Mar.2020</span><br>  
+					<span>娴静时如娇花照水，行动处似弱柳扶风。</span>
+				</div>
+				</li>
+		    </a>
+		    <a href="">
+	        	<li style="background: url('images/banner04.jpg') center center no-repeat;background-size: cover;" class="img-li">
+				<div class="banner-text">
+					<span>4/Mar.2020</span><br>  
+					<span>古装，美丽无比，却停留于历史。汉服，初生稍显粗糙，却成功地沟通了历史，骄傲地指向未来。</span>
+				</div>
+				</li>
+		    </a>
+		    <a href="">
+	        	<li style="background: url('images/banner05.jpg') center center no-repeat;background-size: cover;" class="img-li">
+				<div class="banner-text">
+					<span>3/Mar.2020</span><br>  
+					<span>佳人如玉，宝髻轻挽，斜插一支粉珠步摇，身穿白底蓝花间黄色短曲裾，镶着深蓝衣褖。</span>
+				</div>
+				</li>
+		    </a>
+	    </div>
+	    <ul class="dot">
+	        <li class="dot-li active"></li>
+	        <li class="dot-li"></li>
+	        <li class="dot-li"></li>
+	        <li class="dot-li"></li>
+	        <li class="dot-li"></li>
+	    </ul>
+	</div>
+	<!-- 轮播图结束 -->
+
+	<!-- 每周热卖模块开始 -->
+	<div id="hot-sale">
+		<div class="content">
+			<span class="top-text">TOP 5</span>
+			<h1>每周热卖</h1>
+			<img src="images/icon/no-1.png">
+			<ul class="sale-img">
+				<li>
+					<img src="images/product/c1.jpg">
+					<a href="detail.html">
+		              	<div class="mask">
+		                    <h3>- NO.4 -</h3>汉尚华莲长相守
+		              	</div>
+		            </a>
+				</li>
+				<li>
+					<img src="images/product/c2.jpg">
+					<a href="detail.html">
+		              	<div class="mask">
+		                    <h3>- NO.2 -</h3>花间鹿
+		              	</div>
+		            </a>
+				</li>
+				<li>
+					<img src="images/product/c3.jpg">
+					<a href="detail.html">
+		              	<div class="mask">
+		                    <h3>- NO.1 -</h3>星河
+		              	</div>
+		            </a>
+				</li>
+				<li>
+					<img src="images/product/c4.jpg">
+					<a href="detail.html">
+		              	<div class="mask">
+		                    <h3>- NO.3 -</h3>重回汉唐鹤夜
+		              	</div>
+		            </a>
+				</li>
+				<li>
+					<img src="images/product/c5.jpg">
+					<a href="detail.html">
+		              	<div class="mask">
+		                    <h3>- NO.5 -</h3>洛瑶仙
+		              	</div>
+		            </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 每周热卖模块结束 -->
+
+	<!-- 主推攻略模块开始 -->
+	<div id="main-tips">
+		<h1>主推攻略</h1>
+		<a href=""><img src="images/tip-01.png"></a>
+		<h1 class="symbol">×</h1>
+		<a href=""><img src="images/tip-02.png"></a>
+		<h1 class="symbol">＝</h1>
+		<div class="content">
+			<div style="margin:20px;position: relative;">
+				<a href=""><h3>白羽×故宫</h3></a>
+				<p class="date">04/03/2020</p>
+				<a href="">
+					<span class="text">	
+						当你有意想要旅游北京，当你有意踏进金碧辉煌的故宫，当你有意想要在这漂亮的地方儿留下属于自己美丽的回忆，给自己留下更难忘美丽的回忆！
+					</span>
+				</a>
+				<div class="title">推荐</div>
+				<p class="tit-con">* 发饰：<a href="detail.html">如梦【霓裳】汉服头饰套装女流苏步摇仙发簪发饰发冠簪子古风配饰汉服头饰套装女流苏步摇仙发簪发饰发冠簪子古风配饰饰品顶簪一套饰品顶簪一套<img src="images/product/o4.jpg"></a></p>
+				<p class="tit-con">* 汉服：<a href="detail.html">池夏【楚楚】明制立领长衫织金纱6米摆马面裙原创改良汉服女春夏<img src="images/product/c6.jpg"></a></p>
+				<p class="tit-con">* 鞋子：<a href="detail.html">季九月念秋【凡尘】原创汉服鞋子女古风古装配饰鞋明制绣花鞋民族风内增高老北京布鞋<img src="images/product/s1.jpg"></a></p>
+				<p class="tit-con">* 其他：<br>
+					<a href="detail.html">（油纸伞）絮意【般若】防雨油纸伞装饰吊顶舞蹈伞演出道具中国风传统古典手工纸伞跳舞伞<img src="images/product/o7.jpg"></a><br>
+					<a href="detail.html">（灯笼）时匠【摇曳灯】非遗宫灯花草纸灯笼古风手工diy 中国风汉服装饰花灯<img src="images/product/o8.jpg"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- 主推攻略模块结束 -->
+
+	<!-- 今日上新模块开始 -->
+	<div id="new-sale">
+		<h1>今日上新</h1>
+		<a href="" class="a-css active">汉服</a> / <a href="" class="a-css">其他</a>
+		<ul class="content">
+		<i class="left"></i>
+			<a href="detail.html">
+				<li>
+					<div class="li-img"> 
+						<img src="images/product/c1.jpg">
+					</div>
+					<p class="title">凤珞</p>
+			 		<p>魏晋风交领刺绣齐腰襦裙</p>
+			 		<p class="text price">￥ 219</p>
+			 		<div class="like"></div>
+				</li>
+			</a>	
+			<a href="">
+				<li>
+					<div class="li-img">
+			 			<img src="images/product/c2.jpg">
+			 		</div>
+			 		<p class="title">池夏</p>
+			 		<p>原创汉服对襟衫吊带齐腰褶裙</p>
+			 		<p class="text price">￥ 248</p>
+			 		<div class="like"></div>
+				</li>
+			</a>
+			<a href="detail.html">
+				<li>
+					<div class="li-img"> 
+						<img src="images/product/c3.jpg">
+					</div>
+			 		<p class="title">玉兰</p>
+			 		<p>原创汉服女中国风淡雅魏晋风</p>
+			 		<p class="text price">￥ 199</p>
+			 		<div class="like"></div>
+				</li>
+			</a>
+			<a href="detail.html">
+				<li>
+					<div class="li-img"> 
+						<img src="images/product/c4.jpg">
+					</div>
+			 		<p class="title">广寒</p>
+			 		<p>原创正品明制圆领袍</p>
+			 		<p class="text price">￥ 378</p>
+			 		<div class="like"></div>
+				</li>
+			</a>
+			<a href="detail.html">
+				<li>
+					<div class="li-img">  
+						<img src="images/product/c5.jpg">
+					</div>
+			 		<p class="title">瑶光</p>
+			 		<p>云知月原创汉服女明制圆领大襟</p>
+			 		<p class="text price">￥ 328</p>
+			 		<div class="like"></div>
+				</li>
+			</a>
+			<a href="">
+				<li class="here">
+					<div  class="li-img">
+						<img src="images/product/c6.jpg">
+					</div>
+			 		<p class="title">池夏</p>
+			 		<p>原创汉服晋制襦裙交领十破裙</p>
+			 		<p class="text price">￥ 248</p>
+			 		<div class="like"></div>
+				</li>
+			</a>
+			<i class="right"></i>
+		</ul>
+	</div>
+	<!-- 今日上新模块结束 -->
+
+	<!-- 汉服欣赏模块开始 -->
+	<div id="hanfu-beauty">
+		<h1>汉服之美</h1>
+		<p>关于古典汉服所带来的美丽</p>
+		<div class="htmleaf-content">
+			<div class="accordion" id="accordion">
+				<ul class="accordion-ul">
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-01.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-02.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-03.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-04.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-05.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-06.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-07.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-08.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-09.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-10.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-11.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-12.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-13.jpg" /></li>
+					<li class="accordion-li"><img class="accordion-img" src="images/hanfu-14.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 汉服欣赏模块结束 -->
+
+	<!-- footer开始 -->
+	<footer class="footer">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+</body>
+</html>

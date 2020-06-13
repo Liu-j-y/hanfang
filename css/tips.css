@@ -1,0 +1,221 @@
+#con-box{
+  width: 1200px;
+  height: 600px;
+  margin: 20px auto;
+  font-size: 14px;
+}
+#con-box ul li .desc{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 12px 0;
+}
+#con-box ul li a:hover{
+  color: #CF4633;
+}
+#con-box  li a:hover{
+  text-decoration: underline;
+}
+#con-box .con-left{
+  float: left;
+  width: 804px;
+}
+#con-box .con-left li{
+  width: 250px;
+  height: 174px;
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 20px;
+}
+#con-box .con-left li .li-img{
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+#con-box .con-left li .li-img img{
+  width: 100%;
+  height: auto;
+}
+#con-box .con-right{
+  width: 395px;
+  float: right;
+  position: relative;
+}
+#con-box .con-right li .li-img{
+  width: 395px;
+  height: 318px;
+  overflow: hidden;
+}
+#con-box .con-right li .li-img img{
+  width: auto;
+  height: 100%;
+}
+#con-box .con-right li{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 30px;
+  list-style: disc;
+}
+#con-box .con-right li .a-bg{
+  width: 395px;
+  height: 40px;
+  position: absolute;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  bottom: 60px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+#con-box .con-bottom{
+  float: left;
+}
+#con-box .con-bottom  li{
+  width: 250px;
+  height: 174px;
+  float: left;
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+#con-box .con-bottom  li .li-img{
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+#con-box .con-bottom .li-css{
+  width: 395px;
+  height: 150px;
+  float: left;
+  margin-left: 0;
+}
+#con-box .con-bottom .li-css .li-img{
+  width: 395px;
+  height: 150px;
+  overflow: hidden;
+}
+#con-box .con-bottom li .li-img img{
+  width: 100%;
+  height: auto;
+}
+/*推荐攻略*/
+#tips-list{
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 14px;
+  clear: both;
+}
+#tips-list h2{
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 10px;
+}
+#tips-list .m-left{
+  margin-left: 10px;
+}
+#tips-list .top{
+  height: 32px;
+  vertical-align: center;
+}
+#tips-list .from{
+  color: #CF4633;
+}
+#tips-list .like{
+  float: right;
+  padding: 0 15px;
+  line-height: 30px;
+  border: 1px solid #CF4633;
+  border-radius: 15px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #666;
+  margin-right: 10px;
+}
+#tips-list .top .like .icon{
+  width: 15px;
+  height: 15px;
+  background: url("../images/icon/item-my-.svg") no-repeat;
+  background-size:15px 15px;
+  float: right;
+  margin: 7px 0 0 7px;
+}
+#tips-list .con .text{
+  width: 825px;
+  height: 150px;
+  float: left;
+  margin:10px 10px 10px 20px;
+  position: relative;
+}
+#tips-list .con .title{
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 15px 10px;
+  clear: both;
+  display: block;
+}
+#tips-list .con .p-css{
+  right: 0;
+  bottom: 10px;
+  position: absolute;
+  color: #999;
+  font-size: 12px;
+}
+#tips-list .con .text .desc{
+  font-size: 14px;
+  color: #666;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
+#tips-list li .li-img{
+  width: 325px;
+  height: 150px;
+  overflow: hidden;
+  float: left;
+}
+#tips-list li .li-img img{
+  width: 100%;
+  height: auto;
+}
+#tips-list li{
+  width: 1180px;
+  float: left;
+  padding: 10px 0 0 0;
+  position: relative;
+  background:rgba(246,246,246,0);   
+  border-top: 1px dashed rgba(221,221,221,1);  
+  border-bottom: 1px dashed rgba(221,221,221,1);  
+  border-left: 1px dashed rgba(221,221,221,0);  
+  border-right: 1px dashed rgba(221,221,221,0);  
+  width: 100%;
+  margin-bottom: 10px;
+}
+#tips-list li:hover{
+  background:rgba(246,246,246,1);   
+}
+#tips-list li:hover .title, #tips-list .font-css{
+  color: #CF4633;
+}
+#tips-list .more{
+  width: 1200px;
+  height: 50px;
+  font-size: 18px;
+  color: #2c2c2c;
+  line-height: 50px;
+  font-weight: 400;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #e9e8e6;
+  clear: both;
+}
+#tips-list .more:hover{
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+  color: #c84942;
+}

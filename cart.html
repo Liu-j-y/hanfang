@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>我的购物袋</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/cart.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+</head>
+<body>
+	<!-- header开始 -->
+	<header class="header">
+		<div class="left-content">欢迎，我亲爱的小伙伴们！</div>
+		<ul class="right-content">
+			<li class="item-first about-user">
+				<a href="login.html">登录</a> /
+      			<a href="register.html">注册</a>
+			</li>
+			<li class="item"> 
+				<a href="myorder.html" class="item-my">
+					<i class="icon"></i>
+					<span>我的</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="cart.html" class="item-car">
+					<i class="icon"></i>
+					<span>购物袋</span>
+				</a>
+			</li>
+			<li class="item">
+				<a href="" class="service">
+					<span>在线客服</span>
+				</a>
+			</li>
+		</ul>
+	</header>
+	<!-- header结束 -->
+
+	<!-- 购物袋标题开始 -->
+	<a href="index.html">
+		<div class="logo">
+			<img src="images/logo-.png" width="98" height="49">
+			<div class="title">我的购物袋</div>
+		</div>
+	</a>
+	<!-- 购物袋标题结束 -->
+
+	<!-- 购物袋模块开始 -->
+	<div class="item-list">
+		<table>
+			<thead>
+				<tr>
+					<th class="pro-name"><span>商品名称</span></th>
+					<th class="size"><span>颜色尺码</span></th>
+					<th class="price"><span>单价</span></th>
+					<th class="num"><span>数量</span></th>
+					<th class="total"><span>金额</span></th>
+					<th class="cz"><span>操作</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c1.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c2.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c3.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c1.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c2.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+				<tr class="item">
+					<td>
+						<input type="checkbox" name="check" class="checks"/>
+						<div class="item-img"><img src="images/product/c3.jpg"></div>
+						<div class="desc">
+							<a href="detail.html">云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟云知月原创汉服女明制圆领大襟</a>
+						</div>
+						<p style="color:#a9a9a9;text-align:left;margin:12px 0 0 0">品牌：
+							<a href="" style="color:#a9a9a9;">云知月</a>
+						</p>
+					</td>
+					<td>
+						<span style="margin-left:15px;">颜色：蓝色</span><br>
+						<span style="margin-left:-10px;">尺码：M</span>
+					</td>
+					<td>￥<span class="p-price">328</span></td>
+					<td>
+						<div class="add-plus-input">
+							<a href="javascript:;" class="add btn">+</a>
+							<input type="text" class="num" name="num" value="1" />
+							<a href="javascript:;" class="plus btn">-</a>
+						</div>
+					</td>
+					<td>
+						<span class="total">￥ 
+							<span class="total_p" name="current_price">328</span>
+						</span>
+					</td>
+					<td>
+						<a href="" class="to-car">移入收藏夹</a><br><a href="">删除</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="checkbox"  id="checks" name="checks" class="checks">全选&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="">移入购物袋</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="">删除</a>
+		<div class="account">
+			<a href="" class="function">继续购物</a>
+			<a href="" class="function">清空购物车</a>
+			<span class="total-price">总额（不含运费）：<strong style="font-size:16px">￥ <strong class="total_price">0</strong></strong></span>
+			<a href="" class="to-acc">去结算</a>
+		</div>
+	</div>
+	<div style="width:1200px;margin:0 auto;"><p style="float:right;color:#666">购物保障：100%正品 | 10天退换货 | 10天补差价</p></div>
+	<!-- 购物袋模块结束 -->
+	<script type="text/javascript">
+		$(function() {
+			//数量加减
+			$(".add-plus-input .add").click(function() {
+				var $num = $(this).next(".num");
+				var number = $num.attr("value");
+				$num.attr("value",parseInt(number) + 1);
+				var price=$(".p-price").html();
+				var total=(parseInt(number)+1)*parseInt(price);
+				$(".total_p").html(total);
+			});
+			$(".add-plus-input .plus").click(function() {
+				var $num = $(this).prev(".num");
+				var number = $num.attr("value");
+				if(number==1){
+					$num.attr("value",1);
+				}else{
+					$num.attr("value",parseInt(number) - 1);
+					var price=$(".p-price").html();
+					var total=(parseInt(number)-1)*parseInt(price);
+					$(".total_p").html(total);
+				}
+			});
+
+			//全选
+			$("#checks").click(function(){
+		  		var checked = $("#checks").is(':checked');
+		  		var checkson = $(".checks");
+		  		var num=0;
+		  		if(checked){
+		            for(var i = 0; i < checkson.length ;i++){
+		                checkson[i].checked = true;
+		            }
+		            $("input[name='check']").each(function() {
+		                if(this.checked==true){
+		                    var a=$(this).parent().siblings("td").find(".total_p").html();
+		                    num+=Number(a);
+		                }
+		            });
+		        }else{
+		            for(var i = 0; i < checkson.length ;i++){
+		                checkson[i].checked = false;
+		            }
+		   		}
+	            $('.total_price').html(num);
+		   	})
+		   	$("input[name='check']").click(function(){
+				var num=0;
+				$(this).attr("checked","checked");
+	            $("input[name='check']").each(function() {
+	                if(this.checked==true){
+	                    var a=$(this).parent().siblings("td").find(".total_p").html();
+	                    num+=Number(a);
+	                }
+	            });
+	            $('.total_price').html(num);
+			})
+		})
+	</script>
+	<!-- footer开始 -->
+	<footer class="footer">
+		<div class="content">
+			<div class="text-item">正品保证 | 10天退换货 | 10天调补差价额</div>
+			<div class="text-us">新手帮助 | 购物指南 | 关于我们 | 联系我们 | Email: hanfang@163.com | 微信客服：汉坊网上商城 | Copyright © 2019-2020 Hanfang Technology Co., Ltd. </div>
+		</div>
+	</footer>
+	<!-- footer结束 -->
+  </body>
+</html>
